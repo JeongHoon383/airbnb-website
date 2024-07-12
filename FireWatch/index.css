@@ -130,6 +130,7 @@ table {
 
 body {
   height: 200vh;
+  background-color: black;
 }
 
 header {
@@ -163,4 +164,31 @@ header {
 
 #main-image {
   min-width: 1000px;
+}
+
+#document-title {
+  margin-bottom: 40px;
+  color: #b8e1ee;
+  font-size: 170%;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.mountain-content-list {
+  background-color: #bbe1ee;
+  color: #04120c;
+}
+
+#main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 50px;
+}
+
+#mountain-tag-wrapper {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
 }
