@@ -141,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 54px auto 0;
+  margin: 54px auto 140px;
   width: 300px;
   justify-content: center;
   color: white;
@@ -176,4 +176,25 @@ body {
 #down-arrow-icon {
   width: 33px;
   animation: upAndDown 1s infinite;
+}
+
+#list-item-wrapper {
+  width: 383px;
+  margin: 0 auto 500px;
+  text-align: center;
+}
+
+.list-item {
+  display: inline;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.list-item::before {
+  display: inline-block;
+  background-image: url("./icons/dark_house.png");
+  background-size: 51px 53px;
+  content: "";
+  width: 51px;
+  height: 53px;
 }

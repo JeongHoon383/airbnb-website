@@ -20,38 +20,49 @@
       <p id="join-us-text">Join us!</p>
       <img id="down-arrow-icon" src="./down-arrow.png" alt="down arrow icon" />
     </div>
-    <ul>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
-      <li>26주적금</li>
-      <li>저금</li>
-      <li>패스트캠퍼스</li>
-      <li>떡볶이</li>
-      <li>치킨</li>
+    <ul id="list-item-wrapper">
+      <li class="list-item">26주적금</li>
+      <li class="list-item">저금</li>
+      <li class="list-item">패스트캠퍼스</li>
+      <li class="list-item">떡볶이</li>
+      <li class="list-item">치킨</li>
+      <li class="list-item">축구</li>
+      <li class="list-item">축구선수</li>
+      <li class="list-item">마이너스통장대출</li>
+      <li class="list-item">26주적금</li>
+      <li class="list-item">저금</li>
+      <li class="list-item">패스트캠퍼스</li>
+      <li class="list-item">떡볶이</li>
+      <li class="list-item">치킨</li>
+      <li class="list-item">축구</li>
+      <li class="list-item">축구선수</li>
+      <li class="list-item">마이너스통장대출</li>
+      <li class="list-item">26주적금</li>
+      <li class="list-item">저금</li>
+      <li class="list-item">패스트캠퍼스</li>
+      <li class="list-item">떡볶이</li>
+      <li class="list-item">치킨</li>
+      <li class="list-item">축구</li>
+      <li class="list-item">축구선수</li>
+      <li class="list-item">마이너스통장대출</li>
+      <li class="list-item">26주적금</li>
+      <li class="list-item">저금</li>
+      <li class="list-item">패스트캠퍼스</li>
+      <li class="list-item">떡볶이</li>
+      <li class="list-item">치킨</li>
+      <li class="list-item">축구</li>
+      <li class="list-item">축구선수</li>
+      <li class="list-item">마이너스통장대출</li>
     </ul>
-    <script></script>
+    <script>
+      const listStyleChangeStartY = 373;
+      const listStyleChangeEndY = 1585;
+
+      const listItems = document.querySelectorAll(".list-item")
+
+      window.addEventListener("scroll", () => {
+        if(window.scrollY > listStyleChangeStartY && window.scrollY < listStyleChangeEndY)
+      });
+    </script>
   </body>
 </html>
