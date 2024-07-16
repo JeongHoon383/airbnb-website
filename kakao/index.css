@@ -198,3 +198,11 @@ body {
   width: 51px;
   height: 53px;
 }
+
+.list-item#on {
+  color: white;
+}
+
+.list-item#on::before {
+  background-image: url("./icons/light_house.png");
+}

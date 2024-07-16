@@ -55,13 +55,30 @@
       <li class="list-item">마이너스통장대출</li>
     </ul>
     <script>
+      console.log(window.scrollY);
+
       const listStyleChangeStartY = 373;
       const listStyleChangeEndY = 1585;
 
-      const listItems = document.querySelectorAll(".list-item")
+      const listItems = document.querySelectorAll(".list-item");
+
+      const division =
+        (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
+      console.log(division);
 
       window.addEventListener("scroll", () => {
-        if(window.scrollY > listStyleChangeStartY && window.scrollY < listStyleChangeEndY)
+        if (document.getElementById("on"))
+          document.getElementById("on").removeAttribute("id");
+
+        if (
+          window.scrollY > listStyleChangeStartY &&
+          window.scrollY < listStyleChangeEndY
+        ) {
+          const targetIndex = Math.floor(
+            (window.scrollY - listStyleChangeStartY) / division
+          );
+          listItems[targetIndex].id = "on";
+        }
       });
     </script>
   </body>
