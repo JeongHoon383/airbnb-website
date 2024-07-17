@@ -54,9 +54,16 @@
       <li class="list-item">축구선수</li>
       <li class="list-item">마이너스통장대출</li>
     </ul>
+    <main>
+      <section id="panel1-img">
+        <img
+          id="flying-santa-image"
+          src="./santa_flying.png"
+          alt="santa flying"
+        />
+      </section>
+    </main>
     <script>
-      console.log(window.scrollY);
-
       const listStyleChangeStartY = 373;
       const listStyleChangeEndY = 1585;
 
@@ -64,7 +71,8 @@
 
       const division =
         (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
-      console.log(division);
+
+      const panel1Img = document.getElementById("panel1-img");
 
       window.addEventListener("scroll", () => {
         if (document.getElementById("on"))
@@ -78,6 +86,13 @@
             (window.scrollY - listStyleChangeStartY) / division
           );
           listItems[targetIndex].id = "on";
+        }
+
+        const scrollYBottom =
+          window.scrollY + document.documentElement.clientHeight;
+
+        if (scrollYBottom > panel1Img.offsetTop) {
+          console.log("over");
         }
       });
     </script>
