@@ -208,6 +208,7 @@ body {
 }
 
 #panel1-img {
+  margin-bottom: 500px;
   position: relative;
   height: 320px;
 }

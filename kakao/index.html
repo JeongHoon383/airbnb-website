@@ -73,6 +73,7 @@
         (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
 
       const panel1Img = document.getElementById("panel1-img");
+      const flyingSantaImage = document.getElementById("flying-santa-image");
 
       window.addEventListener("scroll", () => {
         if (document.getElementById("on"))
@@ -91,8 +92,17 @@
         const scrollYBottom =
           window.scrollY + document.documentElement.clientHeight;
 
-        if (scrollYBottom > panel1Img.offsetTop) {
-          console.log("over");
+        if (
+          scrollYBottom > panel1Img.offsetTop &&
+          scrollYBottom < panel1Img.offsetTop + panel1Img.offsetHeight + 100
+        ) {
+          const translateX =
+            80 -
+            (80 * (scrollYBottom - panel1Img.offsetTop)) /
+              panel1Img.offsetHeight +
+            100;
+
+          flyingSantaImage.style.transform = `translateX(${translateX}px)`;
         }
       });
     </script>
