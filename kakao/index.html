@@ -98,11 +98,16 @@
         ) {
           const translateX =
             80 -
-            (80 * (scrollYBottom - panel1Img.offsetTop)) /
+            (80 * 2.3 * (scrollYBottom - panel1Img.offsetTop)) /
+              panel1Img.offsetHeight +
+            100;
+          const translateY =
+            -13 +
+            (13 * (scrollYBottom - panel1Img.offsetTop)) /
               panel1Img.offsetHeight +
             100;
 
-          flyingSantaImage.style.transform = `translateX(${translateX}px)`;
+          flyingSantaImage.style.transform = `translate(${translateX}px, ${translateY}px)`;
         }
       });
     </script>
