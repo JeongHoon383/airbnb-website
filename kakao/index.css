@@ -130,7 +130,6 @@ table {
 
 body {
   background-color: #111;
-  /* overflow: hidden; */
 }
 
 #main-img-wrapper {
@@ -182,7 +181,6 @@ body {
 #list-item-wrapper {
   width: 383px;
   margin: 0 auto 500px;
-  text-align: center;
 }
 
 .list-item {
@@ -212,11 +210,35 @@ body {
   margin-bottom: 500px;
   position: relative;
   height: 320px;
+
+  overflow: hidden;
 }
 
 #flying-santa-image {
   position: absolute;
   right: -80px;
-  height: 380px;
+  height: 310px;
   transform: translate(80px, -13px) rotate(23deg);
+}
+
+#video-section {
+  margin-bottom: 1000px;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+}
+
+#fixed-description {
+  width: 533px;
+  margin: 30px auto 0;
+  transform: translateY(150px);
+  color: white;
+  text-align: right;
+  line-height: 50px;
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 0;
 }
